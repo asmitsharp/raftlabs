@@ -47,8 +47,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
+   git clone https://github.com/asmitsharp/raftlabs.git
+   cd raftlabs
    ```
 
 2. **Install dependencies**:
@@ -73,7 +73,7 @@ To run this project locally, follow these steps:
 5. **Start the application**:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 6. **Access the API**:
@@ -99,14 +99,6 @@ To run this project locally, follow these steps:
 ## Logging
 
 The application uses Winston for logging. Logs are stored in the console and can also be saved to files (`error.log` for errors and `combined.log` for all logs).
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
