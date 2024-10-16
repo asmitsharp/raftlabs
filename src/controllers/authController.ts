@@ -16,7 +16,8 @@ export const register = async (req: Request, res: Response) => {
       { userId: user.id }, // Create a JWT token with user ID
       process.env.JWT_SECRET as string // Use the secret from environment variables
     )
-    res.status(201).json({ user, token }) // Respond with the created user and token
+    const { password: _, ...userWithoutPassword } = user // Exclude the password from the user object
+    res.status(201).json({ user: userWithoutPassword, token }) // Respond with the created user and token
   } catch (error) {
     logger.error("Registration Failed: " + error) // Log registration error
     res.status(400).json({ error: "Registration failed" }) // Respond with an error message
@@ -41,7 +42,8 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       { userId: user.id }, // Create a JWT token with user ID
       process.env.JWT_SECRET as string // Use the secret from environment variables
     )
-    res.json({ user, token }) // Respond with the user and token
+    const { password: _, ...userWithoutPassword } = user // Exclude the password from the user object
+    res.status(200).json({ user: userWithoutPassword, token }) // Respond with the created user and token
   } catch (error) {
     logger.error("Login Failed: " + error) // Log login error
     res.status(400).json({ error: "Login failed" }) // Respond with an error message

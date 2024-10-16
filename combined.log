@@ -19,3 +19,47 @@
 2024-10-15T16:37:47.094Z [info]: Server is running on port 3000
 2024-10-15T16:37:47.094Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
 2024-10-15T16:37:51.301Z [info]: Database connected successfully.
+2024-10-16T06:28:30.263Z [info]: Started periodic synchronization with the database
+2024-10-16T06:28:30.457Z [info]: Server is running on port 3000
+2024-10-16T06:28:30.457Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-16T06:28:34.269Z [info]: Database connected successfully.
+2024-10-16T06:33:33.485Z [info]: Inserted root node: 1
+2024-10-16T06:33:33.487Z [info]: Inserted node: 2 to the right of 1
+2024-10-16T06:33:33.488Z [info]: Inserted node: 3 to the right of 2
+2024-10-16T06:33:33.488Z [info]: BST synchronized with database
+2024-10-16T06:38:33.329Z [info]: Inserted root node: 1
+2024-10-16T06:38:33.332Z [info]: Inserted node: 2 to the right of 1
+2024-10-16T06:38:33.332Z [info]: Inserted node: 3 to the right of 2
+2024-10-16T06:38:33.332Z [info]: BST synchronized with database
+2024-10-16T07:04:50.838Z [info]: Started periodic synchronization with the database
+2024-10-16T07:04:51.004Z [info]: Server is running on port 3000
+2024-10-16T07:04:51.004Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-16T07:04:53.878Z [info]: Database connected successfully.
+2024-10-16T07:05:19.026Z [info]: Added user: test@abcd.com
+2024-10-16T07:05:41.494Z [info]: Accessed user: test@abcd.com
+2024-10-16T07:05:50.763Z [info]: Evicted user: test@abcd.com
+2024-10-16T07:05:51.289Z [warn]: User not found: test@abcd.com
+2024-10-16T07:05:53.883Z [info]: Added user: test@abcd.com
+2024-10-16T07:06:50.766Z [info]: Evicted user: test@abcd.com
+2024-10-16T07:06:54.225Z [info]: Inserted root node: 4
+2024-10-16T07:07:27.833Z [info]: Found node: 4
+2024-10-16T07:07:52.189Z [info]: Inserted node: 5 to the right of 4
+2024-10-16T07:07:58.919Z [info]: Found node: 5
+2024-10-16T07:09:53.369Z [info]: Inserted root node: 1
+2024-10-16T07:09:53.372Z [info]: Inserted node: 2 to the right of 1
+2024-10-16T07:09:53.373Z [info]: Inserted node: 3 to the right of 2
+2024-10-16T07:09:53.374Z [info]: Inserted node: 4 to the right of 3
+2024-10-16T07:09:53.374Z [info]: Inserted node: 5 to the right of 4
+2024-10-16T07:09:53.374Z [info]: BST synchronized with database
+2024-10-16T07:14:53.573Z [info]: Inserted root node: 1
+2024-10-16T07:14:53.576Z [info]: Inserted node: 2 to the right of 1
+2024-10-16T07:14:53.576Z [info]: Inserted node: 3 to the right of 2
+2024-10-16T07:14:53.576Z [info]: Inserted node: 4 to the right of 3
+2024-10-16T07:14:53.576Z [info]: Inserted node: 5 to the right of 4
+2024-10-16T07:14:53.576Z [info]: BST synchronized with database
+2024-10-16T07:19:53.577Z [info]: Inserted root node: 1
+2024-10-16T07:19:53.581Z [info]: Inserted node: 2 to the right of 1
+2024-10-16T07:19:53.581Z [info]: Inserted node: 3 to the right of 2
+2024-10-16T07:19:53.581Z [info]: Inserted node: 4 to the right of 3
+2024-10-16T07:19:53.582Z [info]: Inserted node: 5 to the right of 4
+2024-10-16T07:19:53.582Z [info]: BST synchronized with database
