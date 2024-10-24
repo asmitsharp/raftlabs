@@ -4,10 +4,11 @@
  */
 
 import pool from "../utils/db" // Import the database connection pool
+import { ItemAVL } from "../utils/itemAVL"
 import { ItemBST } from "../utils/ItemBST" // Import the binary search tree for items
 import logger from "../utils/logger" // Import logger for logging
 
-const itemBST = new ItemBST(pool) // Create an instance of ItemBST for caching items
+const itemAVL = new ItemAVL(pool) // Create an instance of ItemBST for caching items
 
 // Define the Item interface
 export interface Item {
@@ -39,7 +40,7 @@ export class ItemModel {
         [name, description, price]
       ) // Insert item into the database
       const item = result.rows[0] // Get the created item
-      itemBST.insert(item.id, item) // Insert item into the binary search tree for caching
+      itemAVL.insert(item.id, item) // Insert item into the binary search tree for caching
       return item // Return the created item
     } catch (error) {
       logger.error("Failed to create Item: " + error) // Log error
@@ -54,7 +55,7 @@ export class ItemModel {
    */
   static async findById(id: number): Promise<Item | null> {
     try {
-      const cachedItem = itemBST.search(id) // Search for item in the binary search tree
+      const cachedItem = itemAVL.search(id) // Search for item in the binary search tree
       if (cachedItem) {
         return cachedItem // Return cached item if found
       }
@@ -62,7 +63,7 @@ export class ItemModel {
       const result = await pool.query("SELECT * FROM items WHERE id = $1", [id]) // Query the database for the item
       const item = result.rows[0] || null // Get the item or null if not found
       if (item) {
-        itemBST.insert(item.id, item) // Insert item into the binary search tree for caching
+        itemAVL.insert(item.id, item) // Insert item into the binary search tree for caching
       }
       return item // Return the item
     } catch (error) {
@@ -92,9 +93,9 @@ export class ItemModel {
       ) // Update item in the database
       const item = result.rows[0] || null // Get the updated item
       if (item) {
-        itemBST.insert(item.id, item) // Update the cached item in the binary search tree
+        itemAVL.insert(item.id, item) // Update the cached item in the binary search tree
       } else {
-        itemBST.delete(id) // Remove item from the tree if not found
+        itemAVL.delete(id) // Remove item from the tree if not found
       }
       return item // Return the updated item
     } catch (error) {
@@ -113,7 +114,7 @@ export class ItemModel {
       const result = await pool.query("DELETE FROM items WHERE id = $1", [id]) // Delete item from the database
       const deleted = result.rowCount! > 0 // Check if the item was deleted
       if (deleted) {
-        itemBST.delete(id) // Remove item from the binary search tree
+        itemAVL.delete(id) // Remove item from the binary search tree
       }
       return deleted // Return true if deleted
     } catch (error) {

@@ -43,3 +43,56 @@ app.use(express.json())
 // Define application routes
 app.use("/auth", authRoutes) // Authentication routes
 app.use("/items", itemRoutes) // Item-related routes
+
+/**
+ * Error handling middleware for catching and logging errors.
+ * Responds with a 500 status code and a generic error message.
+ */
+app.use(
+  (
+    err: Error,
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    logger.error(err.stack) // Log the error stack trace
+    res.status(500).send("Something went wrong!") // Respond with a generic error message
+  }
+)
+
+/**
+ * Function to start the Apollo Server and set up GraphQL endpoint.
+ * Logs the server status and endpoint information.
+ */
+async function startApolloServer() {
+  const server = new ApolloServer({
+    typeDefs, // GraphQL type definitions
+    resolvers, // GraphQL resolvers
+  })
+
+  await server.start() // Start the Apollo server
+
+  // Middleware for handling GraphQL requests
+  app.use(
+    "/graphql",
+    bodyParser.json(), // Parse JSON request bodies
+    expressMiddleware(server, {
+      context: async ({ req }) => ({ req, pool }), // Pass request and database pool to context
+    })
+  )
+
+  // Start the HTTP server and log the status
+  httpServer.listen(port, () => {
+    logger.info(`Server is running on port ${port}`) // Log server start
+    logger.info(
+      `GraphQL endpoint is available at http://localhost:${port}/graphql` // Log GraphQL endpoint
+    )
+  })
+}
+
+// Start the Apollo server and handle any errors
+startApolloServer().catch((error) => {
+  logger.error("Failed to start server: " + error.message) // Log server start error
+})
+
+export default app // Export the Express app for use in other modules

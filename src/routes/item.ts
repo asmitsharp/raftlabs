@@ -17,11 +17,11 @@ import { authenticate } from "../middleware/auth" // Import authentication middl
 const router = express.Router() // Create a new router instance
 
 // Define routes for item-related operations
+router.get("/search", searchItems) // Route to search for items
 router.post("/", authenticate, createItem) // Route to create a new item (requires authentication)
 router.get("/:id", getItem) // Route to retrieve an item by ID
 router.put("/:id", authenticate, updateItem) // Route to update an existing item (requires authentication)
 router.delete("/:id", authenticate, deleteItem) // Route to delete an item by ID (requires authentication)
 router.get("/", getItems) // Route to retrieve a list of items
-router.get("/search", searchItems) // Route to search for items
 
 export default router // Export the router for use in other modules

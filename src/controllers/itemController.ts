@@ -118,6 +118,7 @@ export const getItems = async (req: Request, res: Response) => {
  * @param res - The response object for sending back the result.
  */
 export const searchItems = async (req: Request, res: Response) => {
+  logger.info("Controle Reached searchItems")
   try {
     const query = req.query.q as string // Get search query from request
     logger.info("Search query received: " + query)

@@ -239,3 +239,156 @@
 2024-10-24T07:29:17.240Z [info]: Database connected successfully.
 2024-10-24T07:30:54.016Z [info]: Started periodic synchronization with the database
 2024-10-24T07:30:56.241Z [info]: Database connected successfully.
+2024-10-24T12:12:01.513Z [info]: Started periodic synchronization with the database
+2024-10-24T12:12:04.278Z [info]: Database connected successfully.
+2024-10-24T12:13:32.343Z [info]: Started periodic synchronization with the database
+2024-10-24T12:13:32.515Z [info]: Server is running on port 3000
+2024-10-24T12:13:32.515Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:13:34.681Z [info]: Database connected successfully.
+2024-10-24T12:16:04.196Z [warn]: Node not found: NaN
+2024-10-24T12:16:06.410Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:16:06.411Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:18:34.949Z [info]: Inserted root node: 1
+2024-10-24T12:18:34.950Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T12:18:34.950Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T12:18:34.950Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T12:18:34.951Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T12:18:34.951Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T12:18:34.951Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T12:18:34.951Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T12:18:34.951Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T12:18:34.951Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T12:18:34.951Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T12:18:34.951Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T12:18:34.951Z [info]: BST synchronized with database
+2024-10-24T12:23:13.140Z [info]: Started periodic synchronization with the database
+2024-10-24T12:23:13.293Z [info]: Server is running on port 3000
+2024-10-24T12:23:13.294Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:23:15.535Z [info]: Database connected successfully.
+2024-10-24T12:23:24.344Z [warn]: Node not found: NaN
+2024-10-24T12:23:24.707Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:23:24.708Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:23:52.455Z [warn]: Node not found: NaN
+2024-10-24T12:23:54.555Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:23:54.559Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:25:01.788Z [info]: Started periodic synchronization with the database
+2024-10-24T12:25:01.957Z [info]: Server is running on port 3000
+2024-10-24T12:25:01.957Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:25:04.138Z [info]: Database connected successfully.
+2024-10-24T12:25:18.588Z [warn]: Node not found: NaN
+2024-10-24T12:25:20.932Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:25:20.933Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T12:30:04.023Z [info]: Inserted root node: 1
+2024-10-24T12:30:04.026Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T12:30:04.027Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T12:30:04.027Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T12:30:04.027Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T12:30:04.027Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T12:30:04.027Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T12:30:04.028Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T12:30:04.028Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T12:30:04.028Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T12:30:04.028Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T12:30:04.028Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T12:30:04.028Z [info]: BST synchronized with database
+2024-10-24T12:30:43.566Z [info]: Started periodic synchronization with the database
+2024-10-24T12:30:43.807Z [info]: Server is running on port 3000
+2024-10-24T12:30:43.807Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:30:46.010Z [info]: Database connected successfully.
+2024-10-24T12:31:06.844Z [info]: Controle Reached searchItems
+2024-10-24T12:31:06.845Z [info]: Search query received: item
+2024-10-24T12:31:17.004Z [info]: Controle Reached searchItems
+2024-10-24T12:31:17.011Z [info]: Search query received: mobile
+2024-10-24T12:31:29.419Z [info]: Controle Reached searchItems
+2024-10-24T12:31:29.420Z [info]: Search query received: desc
+2024-10-24T12:35:45.689Z [info]: Inserted root node: 1
+2024-10-24T12:35:45.691Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T12:35:45.691Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T12:35:45.691Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T12:35:45.691Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T12:35:45.692Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T12:35:45.692Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T12:35:45.692Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T12:35:45.692Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T12:35:45.692Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T12:35:45.692Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T12:35:45.693Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T12:35:45.693Z [info]: BST synchronized with database
+2024-10-24T12:36:54.519Z [info]: Started periodic synchronization with the database
+2024-10-24T12:36:54.682Z [info]: Server is running on port 3000
+2024-10-24T12:36:54.682Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:36:56.793Z [info]: Database connected successfully.
+2024-10-24T12:36:58.933Z [info]: Started periodic synchronization with the database
+2024-10-24T12:36:59.024Z [info]: Server is running on port 3000
+2024-10-24T12:36:59.024Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:37:01.412Z [info]: Database connected successfully.
+2024-10-24T12:38:31.194Z [info]: Started periodic synchronization with database
+2024-10-24T12:38:31.355Z [info]: Server is running on port 3000
+2024-10-24T12:38:31.355Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T12:38:33.569Z [info]: Database connected successfully.
+2024-10-24T12:38:46.176Z [info]: Controle Reached searchItems
+2024-10-24T12:38:46.177Z [info]: Search query received: desc
+2024-10-24T12:40:09.332Z [info]: Controle Reached searchItems
+2024-10-24T12:40:09.334Z [info]: Search query received: desc
+2024-10-24T12:40:22.929Z [warn]: Node not found: 6
+2024-10-24T12:40:25.143Z [info]: Inserted/Updated node: 6
+2024-10-24T12:40:33.242Z [info]: Found node: 6
+2024-10-24T12:40:42.390Z [warn]: Node not found: 7
+2024-10-24T12:40:44.544Z [info]: Inserted/Updated node: 7
+2024-10-24T12:40:53.849Z [info]: Found node: 7
+2024-10-24T12:43:33.158Z [info]: Inserted/Updated node: 10
+2024-10-24T12:43:33.158Z [info]: Inserted/Updated node: 3
+2024-10-24T12:43:33.158Z [info]: Inserted/Updated node: 12
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 6
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 8
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 4
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 5
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 7
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 9
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 1
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 11
+2024-10-24T12:43:33.159Z [info]: Inserted/Updated node: 2
+2024-10-24T12:43:33.159Z [info]: AVL Tree synchronized with database. Tree height: 4
+2024-10-24T12:44:01.532Z [info]: Controle Reached searchItems
+2024-10-24T12:44:01.533Z [info]: Search query received: New
+2024-10-24T12:44:48.477Z [info]: Found node: 10
+2024-10-24T12:48:33.368Z [info]: Inserted/Updated node: 9
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 11
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 1
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 10
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 8
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 3
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 2
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 5
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 4
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 12
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 6
+2024-10-24T12:48:33.374Z [info]: Inserted/Updated node: 7
+2024-10-24T12:48:33.374Z [info]: AVL Tree synchronized with database. Tree height: 4
+2024-10-24T12:53:33.339Z [info]: Inserted/Updated node: 12
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 9
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 5
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 7
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 1
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 3
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 6
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 11
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 2
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 4
+2024-10-24T12:53:33.353Z [info]: Inserted/Updated node: 8
+2024-10-24T12:53:33.354Z [info]: Inserted/Updated node: 10
+2024-10-24T12:53:33.354Z [info]: AVL Tree synchronized with database. Tree height: 4
+2024-10-24T12:58:29.315Z [info]: Found node: 12
+2024-10-24T12:58:33.206Z [info]: Inserted/Updated node: 12
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 8
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 5
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 6
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 7
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 4
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 2
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 11
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 10
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 1
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 3
+2024-10-24T12:58:33.207Z [info]: Inserted/Updated node: 9
+2024-10-24T12:58:33.207Z [info]: AVL Tree synchronized with database. Tree height: 4
