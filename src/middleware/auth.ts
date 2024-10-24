@@ -11,7 +11,8 @@ export const authenticate = (
   next: NextFunction
 ): void => {
   const token = req.header("Authorization")?.replace("Bearer ", "")
-  if (!token) { //If token not set directly throw unathorised 
+  if (!token) {
+    //If token not set directly throw unathorised
     res.status(401).json({ error: "Authentication required" })
   } else {
     try {

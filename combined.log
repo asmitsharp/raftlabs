@@ -63,3 +63,179 @@
 2024-10-16T07:19:53.581Z [info]: Inserted node: 4 to the right of 3
 2024-10-16T07:19:53.582Z [info]: Inserted node: 5 to the right of 4
 2024-10-16T07:19:53.582Z [info]: BST synchronized with database
+2024-10-24T06:27:36.932Z [info]: Started periodic synchronization with the database
+2024-10-24T06:27:37.110Z [info]: Server is running on port 3000
+2024-10-24T06:27:37.110Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T06:27:40.498Z [info]: Database connected successfully.
+2024-10-24T06:30:13.821Z [error]: Failed to create User: Error: data and salt arguments required
+2024-10-24T06:30:13.823Z [error]: Registration Failed: Error: data and salt arguments required
+2024-10-24T06:31:46.091Z [error]: Failed to create User: error: duplicate key value violates unique constraint "users_username_key"
+2024-10-24T06:31:46.093Z [error]: Registration Failed: error: duplicate key value violates unique constraint "users_username_key"
+2024-10-24T06:32:34.425Z [info]: Added user: asmit@123.com
+2024-10-24T06:32:36.867Z [info]: Evicted user: asmit@123.com
+2024-10-24T06:32:37.253Z [info]: Inserted root node: 1
+2024-10-24T06:32:37.254Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T06:32:37.254Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T06:32:37.254Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T06:32:37.255Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T06:32:37.255Z [info]: BST synchronized with database
+2024-10-24T06:32:54.442Z [info]: Added user: asmit2@123.com
+2024-10-24T06:33:06.856Z [info]: Added user: asmit3@123.com
+2024-10-24T06:33:21.021Z [info]: Added user: asmit4@123.com
+2024-10-24T06:33:36.868Z [info]: Evicted user: asmit2@123.com
+2024-10-24T06:34:36.873Z [info]: Evicted user: asmit3@123.com
+2024-10-24T06:35:36.887Z [info]: Evicted user: asmit4@123.com
+2024-10-24T06:36:02.720Z [warn]: User not found: asmit5@123.com
+2024-10-24T06:36:53.617Z [warn]: User not found: asmit4@123.com
+2024-10-24T06:36:55.843Z [info]: Added user: asmit4@123.com
+2024-10-24T06:37:36.893Z [info]: Evicted user: asmit4@123.com
+2024-10-24T06:37:39.237Z [info]: Inserted root node: 1
+2024-10-24T06:37:39.237Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T06:37:39.237Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T06:37:39.238Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T06:37:39.238Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T06:37:39.238Z [info]: BST synchronized with database
+2024-10-24T06:42:03.434Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T06:42:09.879Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T06:42:18.078Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T06:42:23.562Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T06:42:31.549Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T06:42:37.231Z [info]: Inserted root node: 1
+2024-10-24T06:42:37.232Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T06:42:37.232Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T06:42:37.232Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T06:42:37.232Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T06:42:37.232Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T06:42:37.233Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T06:42:37.234Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T06:42:37.234Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T06:42:37.234Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T06:42:37.234Z [info]: BST synchronized with database
+2024-10-24T06:42:39.423Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T06:43:11.575Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T06:46:09.593Z [warn]: Node not found: NaN
+2024-10-24T06:46:11.630Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:46:11.631Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:04.626Z [warn]: Node not found: NaN
+2024-10-24T06:47:06.769Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:06.769Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:26.274Z [warn]: Node not found: NaN
+2024-10-24T06:47:28.379Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:28.379Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:39.115Z [info]: Inserted root node: 1
+2024-10-24T06:47:39.116Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T06:47:39.116Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T06:47:39.116Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T06:47:39.116Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T06:47:39.116Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T06:47:39.116Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T06:47:39.117Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T06:47:39.117Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T06:47:39.117Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T06:47:39.117Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T06:47:39.117Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T06:47:39.117Z [info]: BST synchronized with database
+2024-10-24T06:52:38.974Z [info]: Inserted root node: 1
+2024-10-24T06:52:38.975Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T06:52:38.975Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T06:52:38.975Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T06:52:38.975Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T06:52:38.975Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T06:52:38.975Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T06:52:38.975Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T06:52:38.976Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T06:52:38.976Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T06:52:38.976Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T06:52:38.976Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T06:52:38.976Z [info]: BST synchronized with database
+2024-10-24T06:57:39.163Z [info]: Inserted root node: 1
+2024-10-24T06:57:39.165Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T06:57:39.165Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T06:57:39.166Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T06:57:39.166Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T06:57:39.166Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T06:57:39.166Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T06:57:39.166Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T06:57:39.166Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T06:57:39.166Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T06:57:39.167Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T06:57:39.167Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T06:57:39.167Z [info]: BST synchronized with database
+2024-10-24T07:06:36.611Z [info]: Inserted root node: 1
+2024-10-24T07:06:36.614Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T07:06:36.614Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T07:06:36.614Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T07:06:36.614Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T07:06:36.614Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T07:06:36.614Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T07:06:36.614Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T07:06:36.615Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T07:06:36.615Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T07:06:36.615Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T07:06:36.615Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T07:06:36.615Z [info]: BST synchronized with database
+2024-10-24T07:07:29.436Z [info]: Started periodic synchronization with the database
+2024-10-24T07:07:29.675Z [info]: Server is running on port 3000
+2024-10-24T07:07:29.675Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T07:07:31.745Z [info]: Database connected successfully.
+2024-10-24T07:07:41.139Z [warn]: User not found: asmit4@123.com
+2024-10-24T07:07:41.474Z [info]: Added user: asmit4@123.com
+2024-10-24T07:08:05.483Z [warn]: Node not found: NaN
+2024-10-24T07:08:07.733Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:08:07.735Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:08:29.323Z [info]: Evicted user: asmit4@123.com
+2024-10-24T07:17:44.677Z [info]: Started periodic synchronization with the database
+2024-10-24T07:17:44.855Z [info]: Server is running on port 3000
+2024-10-24T07:17:44.856Z [info]: GraphQL endpoint is available at http://localhost:3000/graphql
+2024-10-24T07:17:47.710Z [info]: Database connected successfully.
+2024-10-24T07:17:57.359Z [warn]: User not found: asmit4@123.com
+2024-10-24T07:17:57.682Z [info]: Added user: asmit4@123.com
+2024-10-24T07:18:13.701Z [warn]: Node not found: NaN
+2024-10-24T07:18:15.921Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:18:15.922Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:18:44.576Z [info]: Evicted user: asmit4@123.com
+2024-10-24T07:21:02.493Z [warn]: Node not found: NaN
+2024-10-24T07:21:04.796Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:21:04.796Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:22:46.810Z [info]: Inserted root node: 1
+2024-10-24T07:22:46.812Z [info]: Inserted node: 2 to the right of 1
+2024-10-24T07:22:46.812Z [info]: Inserted node: 3 to the right of 2
+2024-10-24T07:22:46.812Z [info]: Inserted node: 4 to the right of 3
+2024-10-24T07:22:46.812Z [info]: Inserted node: 5 to the right of 4
+2024-10-24T07:22:46.812Z [info]: Inserted node: 6 to the right of 5
+2024-10-24T07:22:46.812Z [info]: Inserted node: 7 to the right of 6
+2024-10-24T07:22:46.812Z [info]: Inserted node: 8 to the right of 7
+2024-10-24T07:22:46.812Z [info]: Inserted node: 9 to the right of 8
+2024-10-24T07:22:46.813Z [info]: Inserted node: 10 to the right of 9
+2024-10-24T07:22:46.813Z [info]: Inserted node: 11 to the right of 10
+2024-10-24T07:22:46.813Z [info]: Inserted node: 12 to the right of 11
+2024-10-24T07:22:46.813Z [info]: BST synchronized with database
+2024-10-24T07:23:01.087Z [info]: Started periodic synchronization with the database
+2024-10-24T07:23:03.279Z [info]: Database connected successfully.
+2024-10-24T07:23:20.493Z [info]: Started periodic synchronization with the database
+2024-10-24T07:23:22.532Z [info]: Database connected successfully.
+2024-10-24T07:23:42.074Z [info]: Started periodic synchronization with the database
+2024-10-24T07:23:44.175Z [info]: Database connected successfully.
+2024-10-24T07:24:04.474Z [info]: Started periodic synchronization with the database
+2024-10-24T07:24:06.713Z [info]: Database connected successfully.
+2024-10-24T07:24:19.291Z [info]: Started periodic synchronization with the database
+2024-10-24T07:24:21.431Z [info]: Database connected successfully.
+2024-10-24T07:25:07.863Z [info]: Started periodic synchronization with the database
+2024-10-24T07:25:09.907Z [info]: Database connected successfully.
+2024-10-24T07:25:26.108Z [info]: Started periodic synchronization with the database
+2024-10-24T07:25:28.081Z [info]: Database connected successfully.
+2024-10-24T07:25:44.324Z [info]: Started periodic synchronization with the database
+2024-10-24T07:25:46.519Z [info]: Database connected successfully.
+2024-10-24T07:25:56.336Z [info]: Started periodic synchronization with the database
+2024-10-24T07:25:58.349Z [info]: Database connected successfully.
+2024-10-24T07:26:14.205Z [info]: Started periodic synchronization with the database
+2024-10-24T07:26:16.374Z [info]: Database connected successfully.
+2024-10-24T07:26:25.684Z [info]: Started periodic synchronization with the database
+2024-10-24T07:26:27.823Z [info]: Database connected successfully.
+2024-10-24T07:26:44.931Z [info]: Started periodic synchronization with the database
+2024-10-24T07:26:47.020Z [info]: Database connected successfully.
+2024-10-24T07:29:13.859Z [info]: Started periodic synchronization with the database
+2024-10-24T07:29:15.216Z [info]: Started periodic synchronization with the database
+2024-10-24T07:29:17.240Z [info]: Database connected successfully.
+2024-10-24T07:30:54.016Z [info]: Started periodic synchronization with the database
+2024-10-24T07:30:56.241Z [info]: Database connected successfully.

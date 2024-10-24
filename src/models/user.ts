@@ -1,3 +1,8 @@
+/**
+ * @file src/models/user.ts
+ * @description Model for user-related database operations and caching.
+ */
+
 import pool from "../utils/db" // Import database connection pool
 import logger from "../utils/logger" // Import logger for logging
 import bcrypt from "bcrypt" // Import bcrypt for password hashing
@@ -13,8 +18,17 @@ export interface User {
   password: string // Hashed password of the user
 }
 
+/**
+ * UserModel class for handling user-related database operations.
+ */
 export class UserModel {
-  // Method to create a new user
+  /**
+   * Method to create a new user.
+   * @param username - The username of the user.
+   * @param email - The email of the user.
+   * @param password - The password of the user.
+   * @returns The created user.
+   */
   static async create(
     username: string,
     email: string,
@@ -35,7 +49,11 @@ export class UserModel {
     }
   }
 
-  // Method to find a user by email
+  /**
+   * Method to find a user by email.
+   * @param email - The email of the user to find.
+   * @returns The found user or null if not found.
+   */
   static async findByEmail(email: string): Promise<User | null> {
     try {
       const cachedUser = userHashTable.get(email) // Get user from cache
@@ -57,7 +75,12 @@ export class UserModel {
     }
   }
 
-  // Method to validate a user's password
+  /**
+   * Method to validate a user's password.
+   * @param user - The user object.
+   * @param password - The password to validate.
+   * @returns True if the password is valid, false otherwise.
+   */
   static async validatePassword(
     user: User,
     password: string
@@ -65,7 +88,13 @@ export class UserModel {
     return bcrypt.compare(password, user.password) // Compare provided password with hashed password
   }
 
-  // Method to update a user's information
+  /**
+   * Method to update a user's information.
+   * @param id - The ID of the user to update.
+   * @param username - The new username of the user.
+   * @param email - The new email of the user.
+   * @returns The updated user or null if not found.
+   */
   static async update(
     id: number,
     username: string,
@@ -87,7 +116,11 @@ export class UserModel {
     }
   }
 
-  // Method to delete a user by ID
+  /**
+   * Method to delete a user by ID.
+   * @param id - The ID of the user to delete.
+   * @returns True if the user was deleted, false otherwise.
+   */
   static async delete(id: number): Promise<boolean> {
     try {
       const result = await pool.query(

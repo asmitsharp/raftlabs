@@ -1,3 +1,8 @@
+/**
+ * @file src/utils/logger.ts
+ * @description Logger setup using Winston for logging application events.
+ */
+
 import { createLogger, format, transports } from "winston" // Import winston for logging
 
 // Create a logger instance with specified settings

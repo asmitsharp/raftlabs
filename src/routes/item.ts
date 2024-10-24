@@ -1,3 +1,8 @@
+/**
+ * @file src/routes/item.ts
+ * @description Routes for item-related operations such as creation, retrieval, updating, and deletion.
+ */
+
 import express from "express" // Import the Express framework
 import {
   createItem, // Import the function to create a new item

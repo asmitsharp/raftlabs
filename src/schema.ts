@@ -1,5 +1,11 @@
+/**
+ * @file src/schema.ts
+ * @description GraphQL schema definitions for User and Item types.
+ */
+
 import { gql } from "apollo-server-express"
 
+// Define the GraphQL schema
 export const typeDefs = gql`
   type User {
     id: ID!

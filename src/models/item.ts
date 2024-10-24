@@ -1,3 +1,8 @@
+/**
+ * @file src/models/item.ts
+ * @description Model for item-related database operations and caching.
+ */
+
 import pool from "../utils/db" // Import the database connection pool
 import { ItemBST } from "../utils/ItemBST" // Import the binary search tree for items
 import logger from "../utils/logger" // Import logger for logging
@@ -12,8 +17,17 @@ export interface Item {
   price: number // Price of the item
 }
 
+/**
+ * ItemModel class for handling item-related database operations.
+ */
 export class ItemModel {
-  // Method to create a new item
+  /**
+   * Method to create a new item.
+   * @param name - The name of the item.
+   * @param description - The description of the item.
+   * @param price - The price of the item.
+   * @returns The created item.
+   */
   static async create(
     name: string,
     description: string,
@@ -33,7 +47,11 @@ export class ItemModel {
     }
   }
 
-  // Method to find an item by ID
+  /**
+   * Method to find an item by ID.
+   * @param id - The ID of the item to find.
+   * @returns The found item or null if not found.
+   */
   static async findById(id: number): Promise<Item | null> {
     try {
       const cachedItem = itemBST.search(id) // Search for item in the binary search tree
@@ -53,7 +71,14 @@ export class ItemModel {
     }
   }
 
-  // Method to update an existing item
+  /**
+   * Method to update an existing item.
+   * @param id - The ID of the item to update.
+   * @param name - The new name of the item.
+   * @param description - The new description of the item.
+   * @param price - The new price of the item.
+   * @returns The updated item or null if not found.
+   */
   static async update(
     id: number,
     name: string,
@@ -78,7 +103,11 @@ export class ItemModel {
     }
   }
 
-  // Method to delete an item by ID
+  /**
+   * Method to delete an item by ID.
+   * @param id - The ID of the item to delete.
+   * @returns True if the item was deleted, false otherwise.
+   */
   static async delete(id: number): Promise<boolean> {
     try {
       const result = await pool.query("DELETE FROM items WHERE id = $1", [id]) // Delete item from the database
@@ -93,7 +122,14 @@ export class ItemModel {
     }
   }
 
-  // Method to find all items with pagination and sorting
+  /**
+   * Method to find all items with pagination and sorting.
+   * @param page - The page number for pagination.
+   * @param limit - The number of items per page.
+   * @param sortBy - The field to sort by.
+   * @param sortOrder - The order of sorting (ASC or DESC).
+   * @returns A list of items.
+   */
   static async findAll(
     page: number = 1,
     limit: number = 10,
@@ -108,7 +144,11 @@ export class ItemModel {
     return result.rows // Return the list of items
   }
 
-  // Method to search for items by name or description
+  /**
+   * Method to search for items by name or description.
+   * @param query - The search query string.
+   * @returns A list of matching items.
+   */
   static async search(query: string): Promise<Item[]> {
     try {
       const result = await pool.query(

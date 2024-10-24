@@ -1,3 +1,8 @@
+/**
+ * @file src/controllers/authController.ts
+ * @description Controller for handling user authentication operations such as registration and login.
+ */
+
 import { Request, Response } from "express" // Import Request and Response types from Express
 import jwt from "jsonwebtoken" // Import jsonwebtoken for creating JWT tokens
 import { UserModel } from "../models/user" // Import UserModel for user-related database operations
@@ -29,7 +34,7 @@ export const register = async (req: Request, res: Response) => {
  * @param req - The request object containing user credentials.
  * @param res - The response object for sending back the result.
  */
-export const login = async (req: Request, res: Response): Promise<void> => {
+export const login = async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body // Destructure user credentials from request body
     const user = await UserModel.findByEmail(email) // Find user by email

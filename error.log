@@ -1,0 +1,16 @@
+2024-10-24T06:30:13.821Z [error]: Failed to create User: Error: data and salt arguments required
+2024-10-24T06:30:13.823Z [error]: Registration Failed: Error: data and salt arguments required
+2024-10-24T06:31:46.091Z [error]: Failed to create User: error: duplicate key value violates unique constraint "users_username_key"
+2024-10-24T06:31:46.093Z [error]: Registration Failed: error: duplicate key value violates unique constraint "users_username_key"
+2024-10-24T06:46:11.630Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:46:11.631Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:06.769Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:06.769Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:28.379Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T06:47:28.379Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:08:07.733Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:08:07.735Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:18:15.921Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:18:15.922Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:21:04.796Z [error]: Failed to find Item by ID: error: invalid input syntax for type integer: "NaN"
+2024-10-24T07:21:04.796Z [error]: Failed to get Item: error: invalid input syntax for type integer: "NaN"

@@ -1,19 +1,33 @@
+/**
+ * @file src/utils/UserHashTable.ts
+ * @description Hash Table implementation for caching user data.
+ */
+
 import logger from "./logger" // Import the logger
 
+// Class representing a node in the hash table
 class UserNode {
   constructor(
-    public email: string,
-    public data: any,
-    public lastAccessed: number = Date.now()
+    public email: string, // Email of the user
+    public data: any, // Data associated with the user
+    public lastAccessed: number = Date.now() // Timestamp of the last access
   ) {}
 }
 
+/**
+ * Class representing a Hash Table for user caching.
+ */
 export class UserHashTable {
   private table: Array<UserNode[]> // Array of buckets for the hash table
   private size: number // Size of the hash table
   private maxSize: number // Maximum size before eviction
   private evictionInterval: NodeJS.Timeout // Interval for periodic eviction
 
+  /**
+   * Constructor for UserHashTable.
+   * @param size - The size of the hash table.
+   * @param maxSize - The maximum size before eviction.
+   */
   constructor(size: number = 997, maxSize: number = 10000) {
     this.table = new Array(size).fill(null).map(() => []) // Initialize the hash table
     this.size = size
@@ -24,8 +38,12 @@ export class UserHashTable {
     ) // Run eviction every minute
   }
 
+  /**
+   * Hash function to compute index based on email.
+   * @param email - The email to hash.
+   * @returns The computed index.
+   */
   private hash(email: string): number {
-    // Hash function to compute index based on email
     let total = 0
     for (let i = 0; i < email.length; i++) {
       total += email.charCodeAt(i)
@@ -33,6 +51,11 @@ export class UserHashTable {
     return total % this.size // Return index
   }
 
+  /**
+   * Adds or updates a user in the hash table.
+   * @param email - The email of the user.
+   * @param data - The data associated with the user.
+   */
   set(email: string, data: any): void {
     const index = this.hash(email) // Get the index for the email
     const node = new UserNode(email, data) // Create a new UserNode
@@ -56,6 +79,11 @@ export class UserHashTable {
     }
   }
 
+  /**
+   * Retrieves user data from the hash table.
+   * @param email - The email of the user to retrieve.
+   * @returns The user data or undefined if not found.
+   */
   get(email: string): any | undefined {
     const index = this.hash(email) // Get the index for the email
     const bucket = this.table[index] // Get the corresponding bucket
@@ -73,6 +101,11 @@ export class UserHashTable {
     return undefined // Return undefined if not found
   }
 
+  /**
+   * Removes a user from the hash table.
+   * @param email - The email of the user to remove.
+   * @returns True if the user was removed, false otherwise.
+   */
   remove(email: string): boolean {
     const index = this.hash(email) // Get the index for the email
     const bucket = this.table[index] // Get the corresponding bucket
@@ -90,11 +123,18 @@ export class UserHashTable {
     return false // Return false if not found
   }
 
+  /**
+   * Returns the current size of the hash table.
+   * @returns The current size.
+   */
   private getCurrentSize(): number {
     // Get the current size of the hash table
     return this.table.reduce((total, bucket) => total + bucket.length, 0)
   }
 
+  /**
+   * Evicts the least recently used user from the hash table.
+   */
   private evictLeastRecentlyUsed(): void {
     // Evict the least recently used user from the hash table
     let oldest: UserNode | null = null
@@ -118,6 +158,9 @@ export class UserHashTable {
     }
   }
 
+  /**
+   * Cleans up the eviction interval.
+   */
   cleanup(): void {
     // Clear the eviction interval
     clearInterval(this.evictionInterval)

@@ -1,3 +1,8 @@
+/**
+ * @file src/utils/db.ts
+ * @description Database connection pool setup for PostgreSQL.
+ */
+
 import { Pool } from "pg" // Import Pool for managing PostgreSQL connections
 import dotenv from "dotenv" // Import dotenv for managing environment variables
 

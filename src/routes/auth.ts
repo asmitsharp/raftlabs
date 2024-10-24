@@ -1,3 +1,8 @@
+/**
+ * @file src/routes/auth.ts
+ * @description Routes for user authentication operations such as registration and login.
+ */
+
 import express from "express" // Import the Express framework
 import { register, login } from "../controllers/authController" // Import authentication controller functions
 

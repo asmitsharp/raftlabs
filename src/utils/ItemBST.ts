@@ -1,25 +1,42 @@
-// src/utils/ItemBST.ts
-import { Pool } from "pg"
+/**
+ * @file src/utils/ItemBST.ts
+ * @description Binary Search Tree implementation for caching items.
+ */
+
+import { Pool } from "pg" // Import Pool for managing PostgreSQL connections
 import logger from "./logger" // Import the logger
 
+// Class representing a node in the binary search tree
 class TreeNode {
   constructor(
-    public id: number,
-    public data: any,
-    public left: TreeNode | null = null,
-    public right: TreeNode | null = null
+    public id: number, // Unique identifier for the item
+    public data: any, // Data associated with the item
+    public left: TreeNode | null = null, // Left child node
+    public right: TreeNode | null = null // Right child node
   ) {}
 }
 
+/**
+ * Class representing a Binary Search Tree for item caching.
+ */
 export class ItemBST {
   private root: TreeNode | null = null // Root of the binary search tree
   private pool: Pool // Database connection pool
 
+  /**
+   * Constructor for ItemBST.
+   * @param pool - The database connection pool.
+   */
   constructor(pool: Pool) {
     this.pool = pool
     this.startPeriodicSync() // Start periodic synchronization with the database
   }
 
+  /**
+   * Inserts or updates an item in the binary search tree.
+   * @param id - The ID of the item.
+   * @param data - The data associated with the item.
+   */
   insert(id: number, data: any): void {
     const newNode = new TreeNode(id, data) // Create a new TreeNode
 
@@ -54,6 +71,11 @@ export class ItemBST {
     }
   }
 
+  /**
+   * Searches for an item by ID in the binary search tree.
+   * @param id - The ID of the item to search for.
+   * @returns The data associated with the item or null if not found.
+   */
   search(id: number): any | null {
     let current = this.root
     while (current) {
@@ -70,6 +92,11 @@ export class ItemBST {
     return null // Return null if not found
   }
 
+  /**
+   * Deletes an item by ID from the binary search tree.
+   * @param id - The ID of the item to delete.
+   * @returns True if the item was deleted, false otherwise.
+   */
   delete(id: number): boolean {
     const removeNode = (node: TreeNode | null, id: number): TreeNode | null => {
       if (node === null) {
@@ -119,12 +146,20 @@ export class ItemBST {
     return deleted // Return true if deleted
   }
 
+  /**
+   * Returns the number of nodes in the binary search tree.
+   * @returns The total count of nodes.
+   */
   size(): number {
     let count = 0
     this.inOrderTraversal(() => count++) // Count nodes using in-order traversal
     return count // Return the total count
   }
 
+  /**
+   * Performs in-order traversal of the binary search tree.
+   * @param callback - The callback function to execute for each node.
+   */
   inOrderTraversal(callback: (id: number, data: any) => void): void {
     const traverse = (node: TreeNode | null) => {
       if (node) {
@@ -136,6 +171,9 @@ export class ItemBST {
     traverse(this.root) // Start traversal from the root
   }
 
+  /**
+   * Synchronizes the binary search tree with the database.
+   */
   private async syncWithDatabase(): Promise<void> {
     try {
       const result = await this.pool.query("SELECT * FROM items") // Query to get items from the database
@@ -155,6 +193,9 @@ export class ItemBST {
     }
   }
 
+  /**
+   * Starts periodic synchronization with the database.
+   */
   private startPeriodicSync(): void {
     // Sync every 5 minutes
     setInterval(() => this.syncWithDatabase(), 5 * 60 * 1000)

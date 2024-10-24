@@ -1,3 +1,8 @@
+/**
+ * @file src/controllers/itemController.ts
+ * @description Controller for handling item-related operations such as creation, retrieval, updating, and deletion.
+ */
+
 import { Request, Response } from "express" // Import Request and Response types from Express
 import { ItemModel } from "../models/item" // Import ItemModel for item-related database operations
 import { AuthRequest } from "../middleware/auth" // Import AuthRequest for authenticated requests
@@ -115,6 +120,7 @@ export const getItems = async (req: Request, res: Response) => {
 export const searchItems = async (req: Request, res: Response) => {
   try {
     const query = req.query.q as string // Get search query from request
+    logger.info("Search query received: " + query)
     const items = await ItemModel.search(query) // Search for items in the database
     res.json(items) // Respond with the list of matching items
   } catch (error) {
